@@ -39,9 +39,9 @@ export default function HomePage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center max-w-3xl mx-auto space-y-6">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-tk-lavender/50 border border-tk-violet/20 text-tk-deepblue text-xs font-bold tracking-wide uppercase shadow-sm">
-              <Sparkles className="w-3.5 h-3.5 text-tk-violet" />
-              <span>United Philippine Youth Ecosystem</span>
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-300 text-emerald-800 text-xs font-bold tracking-wide shadow-sm">
+              <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
+              <span>An Official Project of Tinig KaBataan: <strong>PROJECT SANDIGAN</strong></span>
             </div>
 
             <h1 className="text-4xl sm:text-6xl font-black text-slate-900 tracking-tight leading-[1.1]">
@@ -52,24 +52,32 @@ export default function HomePage() {
             </h1>
 
             <p className="text-lg sm:text-xl text-slate-600 font-normal leading-relaxed">
-              Tinig KaBataan (TK) is a nationwide digital institution empowering young Filipinos through accessible mental health sanctuary, transformative grassroots leadership, investigative publication, and collective civic action.
+              Tinig KaBataan (TK) welcomes you to <strong>PROJECT SANDIGAN</strong> — a dedicated digital mental health ecosystem for Filipino youth. <em>&quot;You don&apos;t have to carry it alone.&quot;</em>
             </p>
 
             {/* Quick Action CTAs */}
             <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
               <Link
-                href="/mental-health/talk"
-                className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-tk-emerald to-emerald-700 text-white font-bold text-sm shadow-lg shadow-emerald-700/20 hover:shadow-xl hover:scale-105 active:scale-95 transition"
+                href="/sandigan"
+                className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-700 text-white font-extrabold text-sm shadow-xl shadow-emerald-700/25 hover:shadow-2xl hover:scale-105 active:scale-95 transition"
               >
-                <HeartHandshake className="w-4 h-4" />
+                <Sparkles className="w-4 h-4 text-emerald-200" />
+                <span>Enter PROJECT SANDIGAN 💙</span>
+              </Link>
+
+              <Link
+                href="/sandigan/talk"
+                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-2xl bg-white text-slate-700 font-bold text-sm border border-slate-300 hover:border-emerald-600 hover:text-emerald-700 shadow-sm hover:shadow transition"
+              >
+                <HeartHandshake className="w-4 h-4 text-emerald-600" />
                 <span>Talk to Tinig (Support)</span>
               </Link>
 
               <Link
-                href="/mental-health/reset-room"
+                href="/sandigan/reset-room"
                 className="inline-flex items-center gap-2 px-5 py-3.5 rounded-2xl bg-white text-slate-700 font-bold text-sm border border-slate-300 hover:border-tk-deepblue hover:text-tk-deepblue shadow-sm hover:shadow transition"
               >
-                <Activity className="w-4 h-4 text-emerald-600" />
+                <Activity className="w-4 h-4 text-teal-600" />
                 <span>The Reset Room</span>
               </Link>
 
@@ -267,13 +275,13 @@ export default function HomePage() {
           <div className="max-w-2xl space-y-4 relative z-10">
             <span className="text-xs font-bold uppercase tracking-widest text-tk-lavender flex items-center gap-2">
               <Building className="w-4 h-4" />
-              <span>Interactive 2.5D Virtual Office</span>
+              <span>TK Operations Sanctuary</span>
             </span>
             <h2 className="text-3xl sm:text-4xl font-black tracking-tight">
-              Explore the Private Virtual Headquarters
+              Explore the Private Virtual Headquarters & Operations Space
             </h2>
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              Step into TK's interactive isometric digital offices. Explore the 10 departmental rooms, review live project Kanban boards, collaborate on tasks, and access the centralized Knowledge Brain.
+              Step into TK&apos;s interactive isometric virtual headquarters. Coordinate departmental initiatives, review live project Kanban boards, collaborate on youth welfare tasks, and access the centralized Knowledge Brain.
             </p>
             <div className="pt-2 flex flex-wrap items-center gap-4">
               <Link

@@ -85,6 +85,54 @@ export default function AboutPage() {
         </div>
       </div>
 
+      {/* PROJECT SANDIGAN SPOTLIGHT & ORGANIZATIONAL HIERARCHY */}
+      <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-emerald-950 via-slate-900 to-teal-950 text-white space-y-6 border border-emerald-500/30 shadow-2xl">
+        <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
+          <div className="space-y-3 max-w-2xl">
+            <span className="text-xs font-bold uppercase tracking-widest text-emerald-400 px-3 py-1 rounded-full bg-emerald-500/20 inline-block border border-emerald-500/30">
+              Flagship Digital Mental Health Initiative
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-white">
+              PROJECT SANDIGAN
+            </h2>
+            <p className="text-emerald-300 font-semibold text-base italic">
+              &quot;You don&apos;t have to carry it alone.&quot;
+            </p>
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Founded and developed by <strong>Emmanuel James C. Dela Cruz</strong>, PROJECT SANDIGAN is the specialized digital mental health sanctuary of Tinig KaBataan. Designed to dismantle stigma and bridge urgent psychological support to Filipino students, it integrates 14 core services—including 24/7 conversational support, breathing rooms, private safety plans, and direct linkages to verified Bataan clinical facilities (MMWGH and BGHMC).
+            </p>
+          </div>
+
+          <div className="p-5 rounded-2xl bg-slate-950/80 border border-emerald-500/30 text-xs font-mono space-y-2 shrink-0 md:w-80">
+            <div className="text-[11px] font-bold text-emerald-400 uppercase tracking-wider">
+              Organizational Hierarchy
+            </div>
+            <div className="text-slate-300 leading-relaxed whitespace-pre font-mono text-[11px]">
+              {`Tinig KaBataan (TK)\n└── PROJECT SANDIGAN\n    └── Dedicated Digital Mental\n        Health Ecosystem`}
+            </div>
+            <div className="pt-2 text-[10px] text-slate-400 border-t border-slate-800">
+              Founder &amp; Developer: Emmanuel James C. Dela Cruz
+            </div>
+          </div>
+        </div>
+
+        <div className="pt-2 flex flex-wrap gap-4">
+          <Link
+            href="/sandigan"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-black text-xs shadow-lg transition"
+          >
+            <span>Explore PROJECT SANDIGAN</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+          <Link
+            href="/sandigan/about"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs transition border border-white/20"
+          >
+            <span>Read the Sandigan Story</span>
+          </Link>
+        </div>
+      </div>
+
       {/* Institutional Leadership */}
       <div className="p-8 rounded-3xl bg-slate-900 text-white space-y-6">
         <div className="max-w-2xl">

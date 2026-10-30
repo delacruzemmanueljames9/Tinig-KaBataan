@@ -96,6 +96,14 @@ export const PublicHeader: React.FC = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
+              <Link
+                href="/sandigan"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-bold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition mr-1"
+              >
+                <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
+                <span>PROJECT SANDIGAN</span>
+              </Link>
+
               {navLinks.slice(0, 4).map(link => (
                 <Link
                   key={link.href}
@@ -213,6 +221,18 @@ export const PublicHeader: React.FC = () => {
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
           <div className="sm:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-3">
+            <Link
+              href="/sandigan"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center justify-between p-3 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-700 text-white font-bold text-xs shadow-md"
+            >
+              <div className="flex items-center gap-2">
+                <Sparkles className="w-4 h-4 text-emerald-300" />
+                <span>PROJECT SANDIGAN — Digital Mental Health</span>
+              </div>
+              <ChevronRight className="w-4 h-4 text-emerald-200" />
+            </Link>
+
             <div className="grid grid-cols-2 gap-2 pb-3 border-b border-slate-100">
               {navLinks.map(link => (
                 <Link

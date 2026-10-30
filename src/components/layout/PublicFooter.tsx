@@ -21,6 +21,9 @@ export const PublicFooter: React.FC = () => {
             <p className="text-sm text-slate-400 leading-relaxed max-w-md">
               A united Philippine digital institution empowering youth through accessible, stigma-free mental health support, grassroots civic participation, transformative leadership development, and investigative publication.
             </p>
+            <p className="text-xs text-emerald-300/90 leading-relaxed max-w-md font-medium">
+              Home of <strong>PROJECT SANDIGAN</strong> — <em>"You don't have to carry it alone."</em> Founded and developed by Emmanuel James C. Dela Cruz.
+            </p>
             <div className="flex items-center gap-2 pt-2 text-xs text-slate-400">
               <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
               <span>Compliant with Republic Act No. 10173 (Philippine Data Privacy Act of 2012).</span>
@@ -44,9 +47,10 @@ export const PublicFooter: React.FC = () => {
           <div>
             <h4 className="text-xs font-bold uppercase tracking-wider text-white mb-4">Autonomous Portals</h4>
             <ul className="space-y-2.5 text-sm">
-              <li><Link href="/mental-health" className="hover:text-emerald-300 transition text-emerald-400 font-medium">Mental Health Sanctuary</Link></li>
-              <li><Link href="/mental-health/talk" className="hover:text-white transition">Talk to Tinig (Support)</Link></li>
-              <li><Link href="/mental-health/reset-room" className="hover:text-white transition">The Reset Room</Link></li>
+              <li><Link href="/sandigan" className="hover:text-emerald-200 transition text-emerald-400 font-bold flex items-center gap-1.5"><span>⭐ PROJECT SANDIGAN</span></Link></li>
+              <li><Link href="/mental-health" className="hover:text-emerald-300 transition text-slate-300 font-medium">Mental Health Sanctuary</Link></li>
+              <li><Link href="/sandigan/talk" className="hover:text-white transition">Talk to Tinig (Support)</Link></li>
+              <li><Link href="/sandigan/reset-room" className="hover:text-white transition">The Reset Room</Link></li>
               <li><Link href="/publication" className="hover:text-white transition">TK Publication Gazette</Link></li>
               <li><Link href="/youth" className="hover:text-white transition">Youth Action Hub</Link></li>
               <li><Link href="/learning" className="hover:text-white transition">Leadership Academy</Link></li>
