@@ -184,6 +184,31 @@ export const initialDepartments: Department[] = [
 
 export const initialWebsites: Website[] = [
   {
+    id: 'site-sandigan',
+    slug: 'sandigan',
+    title: 'PROJECT SANDIGAN',
+    tagline: 'You don\'t have to carry it alone.',
+    description: 'An official digital mental health initiative under Tinig KaBataan. Founded and developed by Emmanuel James C. Dela Cruz. Featuring 7 AI Officers, Bataan healthcare linkages, and compassionate peer support.',
+    department_id: 'dept-mh',
+    department_name: 'Mental Health Department',
+    primary_color: '#0D9488',
+    accent_color: '#DCEFE5',
+    status: 'published',
+    url_path: '/sandigan',
+    nav_links: [
+      { label: 'Sandigan Home', href: '/sandigan' },
+      { label: 'Talk to Tinig', href: '/sandigan/talk' },
+      { label: 'Wellness Check', href: '/sandigan/wellness-check' },
+      { label: 'Reset Room', href: '/sandigan/reset-room' },
+      { label: 'Inner Garden', href: '/sandigan/inner-garden' },
+      { label: 'Find Support', href: '/sandigan/find-support' },
+      { label: 'My Safety Plan', href: '/sandigan/safety-plan' },
+      { label: 'Founder HQ', href: '/sandigan/command-center' },
+    ],
+    pages_count: 14,
+    created_at: '2026-10-30T00:00:00Z',
+  },
+  {
     id: 'site-main',
     slug: 'main',
     title: 'Tinig KaBataan Central',

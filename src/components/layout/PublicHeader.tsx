@@ -38,6 +38,13 @@ export const PublicHeader: React.FC = () => {
 
   const servicePortals = [
     {
+      title: 'PROJECT SANDIGAN',
+      desc: 'You don\'t have to carry it alone • Flagship Digital Mental Health Initiative',
+      href: '/sandigan',
+      icon: Sparkles,
+      color: 'text-emerald-600 bg-emerald-100 dark:bg-emerald-950 font-bold',
+    },
+    {
       title: 'Mental Health Platform',
       desc: 'Talk to Tinig, Reset Room, and Crisis Support',
       href: '/mental-health',
